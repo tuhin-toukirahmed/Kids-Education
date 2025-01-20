@@ -5,3 +5,318 @@
     box-sizing: border-box;
     font-family: "Quicksand", serif;
 }
+:root{
+    --primary-color: #F7F7F7;
+    --secondary-color: #111111;
+    --bule: #01ACFD;
+    --orange:#FEA301;
+    --font-color: #808080;
+    --title-size: 3rem;
+    --subtitle-size: 1.5rem;
+    --paragraph-size: 1rem;
+}
+/* common button */
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 12px;
+    background-color: var(--orange);
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    width: 200px;
+}
+
+/* Nav start   */
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    width: 100Dvw;
+    max-width: 1200px;
+    height: 80dvh;
+    /* background-color: red; */
+    margin:0 auto;
+    position: relative;
+}
+header>section>nav{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+
+}
+nav>.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 10px;
+}
+nav>.logo>img{
+    height: 60px;
+    width: 60px;
+}
+nav>.logo>h3{
+    margin-left: 10px;
+    font-size: var(--title-size);
+    color: var(--secondary-color);
+}
+
+.nav-links>ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.link>a{
+    position: relative;
+    text-decoration: none;
+    font-size: var(--subtitle-size);
+    font-weight: 700;
+}
+#Home{
+    color:var(--orange) ;
+}
+#About{
+    color:var(--bule) ;
+}
+#Facilities{
+    color: #05D4DF;
+}
+#Admission{
+    color: #5D58EF;
+}
+#nav-bar>nav>button{
+    margin: 6px 0;
+    width: 190px;
+    transition: ease 0.5s;
+}
+#nav-bar>nav>button:hover{
+    background-color: var(--bule);
+}
+header>#hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+#hero >.hero-title{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 600px;
+    gap: 24px;
+}
+#hero >.hero-title>h1{
+    font-size: var(--title-size);
+    font-weight: 700;
+    text-align: left;
+}
+
+#hero >.hero-title>p{
+    font-size: var(--paragraph-size);
+    color: var(--font-color);
+    text-align: left;
+    font-weight: 600;
+}
+#hero>.hero-title>button{
+    padding: 12px 20px;
+    font-size: 1.25rem;
+    border-radius: 12px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    width: 180px;
+    transition: ease 0.5s;
+}
+header>#hero>.hero-image{
+    background: url(/assets/hero-kids.png);
+    width: 430px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.orange{
+    color: var(--orange);
+}
+.black{
+    color: var(--secondary-color);
+}
+.blue{
+    color: var(--bule);
+}
+
+/* header end  */
+
+
+
+@media screen and (min-width: 770px) and (max-width:1025px) {
+    header{
+        max-width: 950px;
+        /* align-items: center; */
+    }
+    nav>.logo>img{
+        height: 50px;
+        width: 50px;
+    }
+    nav>.logo>h3{
+        font-size: 1.5rem;
+    }
+    .link>a{
+        font-size: 1.25rem;
+    }
+    #nav-bar>nav>button{
+        width: 150px;
+        padding: 0.75rem 1rem;
+        font-size: 1.25rem;
+        font-weight:700 ;
+    }
+    header>#hero{
+        /* margin: 0 auto; */
+        max-width: 1000px;
+        width: 100%;
+        padding: 15px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #hero >.hero-title{
+        width: 500px;
+        gap: 15px;
+    }
+    #hero >.hero-title>h1{
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    #hero >.hero-title>p{
+        font-size: 1rem;
+    }
+    #hero>.hero-title>button{
+        width: 150px;
+        padding: 0.75rem 1rem;
+        font-size: 1.25rem;
+        font-weight:700 ;
+    }
+    header>#hero>.hero-image{
+        width: 400px;
+        height: 100%;
+        background: url(/assets/hero-kids.png);
+        background-repeat: no-repeat;
+        background-size: contain;  
+        background-position: right; 
+        
+    }
+    
+}
+
+@media screen and (max-width: 769px) and (min-width: 426px){
+    header{
+        max-width: 700px;
+        gap: 70px;
+        height: 90vh;
+    }
+    nav>.logo>img{
+        height: 40px;
+        width: 40px;
+    }
+    nav>.logo>h3{
+        font-size: 1rem;
+    }
+    .link>a{
+        display: none;
+    }
+    #nav-bar>nav>button{
+        padding: 0.75rem 1rem;
+    }
+    header>#hero{
+        padding: 10px;
+        gap: 20px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    #hero >.hero-title{
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+    #hero >.hero-title>h1{
+        font-size: 3rem;
+        text-align: center;
+        line-height: 1;
+    }
+    #hero >.hero-title>p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    header>#hero>.hero-image{
+        background-position: center;
+    }
+
+}
+    
+@media screen and (max-width: 426px){
+    header{
+        max-width: 400px;
+        gap: 50px;
+        margin-top: 15px;
+        height: 100vh;
+    }
+    #nav-bar> nav{
+        padding: 10px;
+    }
+    
+    nav>.logo>img{
+        height: 30px;
+        width: 30px;
+    }
+    nav>.logo>h3{
+        font-size: 0.8rem;
+    }  
+    .link>a{
+        display: none;
+    } 
+    #nav-bar>nav>button{
+        display: none;
+    }
+    .menu{
+        display: block;
+        font-size: 20px;
+    }
+    header>#hero{
+        padding: 10px;
+        gap: 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    #hero >.hero-title{
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+    #hero >.hero-title>h1{
+        font-size: 2.25rem;
+        text-align: center;
+        line-height: 1;
+    }
+    #hero >.hero-title>p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    header>#hero>.hero-image{
+        background-position: center;
+    }
+    #hero>.hero-title>button{
+        padding: 10px 10px;
+        font-size: 1rem;
+    }
+
+}
+
