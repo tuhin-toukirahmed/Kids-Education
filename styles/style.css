@@ -441,11 +441,14 @@ header>#hero>.hero-image{
         text-align: center;
     }
     header>#hero>.hero-image{
+        width: 400px;
+        height: 500px;
         background-position: center;
     }
     /* curriculum section start  */
     #curriculum{
         gap: 20px;
+        margin-top: 40px;
         max-width: 700px;
         width: 100%;
         align-items: center;
@@ -548,6 +551,8 @@ header>#hero>.hero-image{
         text-align: center;
     }
     header>#hero>.hero-image{
+        width: 300px;
+        height: 400px;
         background-position: center;
     }
     #hero>.hero-title>button{
@@ -557,7 +562,7 @@ header>#hero>.hero-image{
     /* curriculum section start  */
     #curriculum{
         gap: 10px;
-        margin: 50px auto !important;
+        /* margin: 50px auto !important; */
         max-width: 400px;
         width: 100%;
         height: auto;
