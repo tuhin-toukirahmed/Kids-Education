@@ -629,9 +629,10 @@ hr{
     #curriculum{
         gap: 30px;
         max-width: 950px;
-        width: 100%;
+        width: 90%;
         align-items: center;
         justify-content: space-between;
+        margin: 30px auto;
     }
     #curriculum>.curriculum-title{
         font-size: 2rem;
@@ -639,6 +640,7 @@ hr{
     #curriculum>.standard-of-curriculum{
         gap: 30px;
         width: 100%;
+        max-width: 950px;
     }
     #curriculum>.standard-of-curriculum>.curriculum-level{  
         width: 100%;
