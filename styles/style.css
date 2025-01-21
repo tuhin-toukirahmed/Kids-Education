@@ -325,6 +325,7 @@ header>#hero>.hero-image{
     width: 100%;
     height: 300px;
     border: none;
+    object-fit: fill;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     transition: ease-out all 1s;
@@ -401,7 +402,7 @@ header>#hero>.hero-image{
     width: 100%;
     height: 180px;
     border: none;
-    object-fit: cover;
+    object-fit: fill;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     transition: ease-out all 1s;
@@ -443,6 +444,136 @@ header>#hero>.hero-image{
 }
 
 /* our story section end  */
+
+/* footer section start  */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(to bottom, #01adfd68, #ffffff) #01adfd83;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    color: white;
+    padding: 20px 50px;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:10px ;
+}
+
+footer>.section-1{
+    display: flex;
+    width: 100%;
+    /* height: 500px; */
+    align-items: start;
+    justify-content: space-between;
+}
+.school-details{
+    display: flex;
+    width: 600px;
+    gap: 10px;
+    flex-direction: column;
+    
+}
+.footer-logo{
+    width: 200px;
+    height: 70px;
+    object-fit: fill;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-logo>img{
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+.footer-logo>h2{
+    font-size: 1.50rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-left: 5px;
+}
+.school-details>p{
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+    line-height: 1.125;
+    letter-spacing: 1;
+}
+.contact{
+    display: flex;
+    gap: 5px;
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.contact>h3{
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.contact>p{
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+    line-height: 1.125;
+    letter-spacing: 1;
+}
+
+.social-media{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media>h3{ 
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.social-media>ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-link{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer-link>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.copyright{
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+hr{
+    border: none;
+    height: 2px;
+    width: 80%;
+    border-top: 1px solid var(--secondary-color);
+    margin-top: 20px;
+}
+
 
 @media screen and (min-width: 770px) and (max-width:1025px) {
     header{
@@ -637,6 +768,14 @@ header>#hero>.hero-image{
         font-weight:700 ;
     }
     /* our story section end  */
+    /* footer start here  */
+    footer{
+        max-width: 950px;
+        width: 100%;
+    }
+    .school-details>p{
+        font-size: 0.75rem;
+    }
 }
 
 @media screen and (max-width: 769px) and (min-width: 445px){
@@ -755,6 +894,40 @@ header>#hero>.hero-image{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+    }
+    footer{
+        max-width: 700px;
+        width: 100%;
+        gap: 20px;
+    }
+    .section-1{
+        gap: 20px;
+        width: 100%;
+        
+    }
+    .school-details{
+        gap: 5px;
+        
+    }
+    .footer-logo>h2{
+        font-size: 1.25rem;
+    }
+    .footer-logo>img{
+        height: 40px;
+        width: 40px;
+    }
+    .school-details>p{
+        font-size: 0.75rem;
+    }
+    .contact>p{
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .social-icon{
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        transition: all 0.5s ease-in-out;
     }
 }
 
@@ -910,6 +1083,43 @@ header>#hero>.hero-image{
         padding: 10px 10px;
         font-size: 1rem;
         width: 130px;
+    }
+    footer{
+        max-width: 400px;
+        width: 100%;
+        gap: 10px;
+    }
+    .footer-logo>img{
+        height: 30px;
+        width: 30px;
+    }
+    .section-1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .school-details{
+        width: 100%;
+        align-items: center;
+    }
+    .school-details>p{
+        font-size: 0.85rem;
+        text-align: center;
+    }
+    .contact{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /* margin-bottom: 0; */
+    }
+    .contact>h3{
+        margin-bottom: 0;
+    }
+    .social-media{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
     }
 
    }
