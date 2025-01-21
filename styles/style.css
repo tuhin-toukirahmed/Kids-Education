@@ -641,6 +641,9 @@ hr {
     border-top: 1px solid var(--secondary-color);
     margin-top: 20px;
 }
+.advertise{
+    width: 60%;
+}
 
 
 @media screen and (min-width: 770px) and (max-width:1025px) {
@@ -699,6 +702,9 @@ hr {
         padding: 0.75rem 1rem;
         font-size: 1.25rem;
         font-weight: 700;
+    }
+    .advertise{
+        width: 50%;
     }
 
     header>#hero>.hero-image {
