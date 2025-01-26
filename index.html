@@ -6,187 +6,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="shortcut icon" href="./assets/hero-kids.png" type="image/x-icon">
     <title>Kid's Education</title>
 </head>
 
 <body>
-    <!-- header start -->
-    <header>
-        <section id="nav-bar">
-            <nav>
-                <div class="logo">
-                    <img src="./assets/logo.png" alt="A school bag as a logo">
-                    <h3>XYZ School</h3>
+    <!-- Loader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </div>
+    <main id="content" style="display: none;">
+        <!-- header start -->
+        <header>
+            <section id="nav-bar">
+                <nav>
+                    <div class="logo">
+                        <img src="./assets/logo.png" alt="A school bag as a logo">
+                        <h3>XYZ School</h3>
+                    </div>
+                    <div class="nav-links">
+                        <ul>
+                            <li class="link"><a id="Home" href="#Home">Home</a></li>
+                            <li class="link"><a id="About" href="#About">About</a></li>
+                            <li class="link"><a id="Facilities" href="#Facilities">Facilities</a></li>
+                            <li class="link"><a id="Admission" href="#Admission">Admission</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn">Contact</button>
+                    <div class="menu " hidden>
+                        <i class="ti ti-menu-2"></i>
+                    </div>
+                </nav>
+            </section>
+            <section id="hero">
+                <div class="hero-title">
+                    <h1>
+                        <span class="orange">Empowering</span><br>
+                        <span class="black">students from small <br> age</span>
+                        <span class="blue"> towards vision</span>
+                    </h1>
+                    <p class="hero-description">With the courage, Confidence, Creativity and Compassion to make their
+                        Unique
+                        Contribution in a Diverse and Dynamic World.</p>
+                    <div class="advertise">
+                        <marquee behavior="" direction="left"><span>✨ Enroll Today – Ongoing Admissions! ✨</span>
+                        </marquee>
+                    </div>
+                    <button class="btn">Enroll Now</button>
                 </div>
-                <div class="nav-links">
+                <div class="hero-image">
+
+                </div>
+            </section>
+        </header>
+        <!-- header end  -->
+
+        <!-- curriculum section start  -->
+        <section id="curriculum">
+            <h1 class="curriculum-title">Standard Curriculum</h1>
+            <div class="standard-of-curriculum">
+                <div class="level-container">
+                    <div class="curriculum-level kinder">
+                        <img src="./assets/kinder.png" alt="Food milk fruits image">
+                        <div class="curriculum-description">
+                            <h2>Kinder (3-6) Years</h2>
+                            <p>In kindergarten, children learn basics like letters, sounds, and numbers. They start
+                                writing
+                                simple words and sentences. They explore the world through science, observing plants and
+                                animals. Social skills are emphasized. Motor skills, both fine and gross, are developed
+                                through various activities and play.
+                            </p>
+                        </div>
+                        <button>Read More</button>
+                    </div>
+                    <div class="curriculum-level elementary">
+                        <img src="./assets/elementary.png" alt="Book clock and fruits image">
+                        <div class="curriculum-description">
+                            <h2>Elementary School</h2>
+                            <p>Elementary school students hone foundational skills, such as reading fluently and
+                                comprehending texts. They write structured sentences and paragraphs. Math lessons cover
+                                addition, subtraction, multiplication, and division. Science experiments introduce earth
+                                science and biology.
+
+                            </p>
+                        </div>
+                        <button>Read More</button>
+                    </div>
+                    <div class="curriculum-level middle">
+                        <img src="./assets/middle.png" alt="Inventional image ">
+                        <div class="curriculum-description">
+                            <h2>Middle (10-16) Years</h2>
+                            <p>In middle school, students deepen their understanding of core subjects. They engage in
+                                more
+                                complex reading and writing, crafting essays and analyzing texts. Math includes algebra
+                                and
+                                geometry. Science expands to chemistry, physics, and biology. Social studies cover
+                                history,
+                                government, and cultures.
+
+                            </p>
+                        </div>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="naivigation-button">
+                <div><i class="fa-solid fa-chevron-left"></i></div>
+                <div><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </section>
+        <!-- curriculum section end  -->
+
+        <!-- start our stories here -->
+        <section id="stories">
+            <h2>Our Stories</h2>
+            <div class="story-container">
+                <div class="first-story">
+
+                    <img src="./assets/story-1.png" alt="Story 1">
+                    <p class="floating-date">November 19, 2019</p>
+                    <div>
+                        <h3>A fun toddler coloring training on classroom</h3>
+                        <p>Under the streaks of dawn, little Mei clutched her backpack, heart fluttering with
+                            excitement.
+                            She crossed bustling alleys, cheeks rosy in the crisp morning air, waving to familiar faces.
+                            The
+                            school gate loomed ahead, a doorway to endless adventures and friendships. With a firm grip
+                            on
+                            her dreams, she stepped into a world waiting to be discovered. 🌅🎒👧🏻 Would you like to
+                            learn
+                            more about school life in Qingdao?......</p>
+                    </div>
+                    <button> Read More.</button>
+                </div>
+                <div class="second-story">
+                    <div class="secondary-story">
+                        <img src="./assets/story-2.png" alt="">
+                        <p class="floating-date">December 10, 2019</p>
+                        <div>
+                            <h3>Find out if a school fits the family's needs</h3>
+                            <p>Family needs</p>
+                        </div>
+                    </div>
+                    <div class="secondary-story">
+                        <img src="./assets/story-3.png" alt="">
+                        <p class="floating-date">February 27, 2020</p>
+                        <div>
+                            <h3>Summer math & literacy</h3>
+                            <p class="story ">Center for Kids</p>
+                        </div>
+                    </div>
+                    <div class="secondary-story">
+                        <img src="./assets/story-4.png" alt="">
+                        <p class="floating-date">July 12,2020</p>
+                        <div>
+                            <h3>Classroom management</h3>
+                            <p>Techniques for new tutors</p>
+                        </div>
+                    </div>
+                    <div class="secondary-story">
+                        <img src="./assets/story-5.png" alt="">
+                        <p class="floating-date">January 1, 2021</p>
+                        <div>
+                            <h3>Conversation rhymes</h3>
+                            <p>Improve kids listening</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn">View All</button>
+        </section>
+        <!-- fotter start  -->
+        <footer>
+            <div class="section-1">
+                <section class="school-details">
+                    <div class="footer-logo">
+                        <img src="./assets/logo.png" alt="Logo">
+                        <h2>XYZ School</h2>
+                    </div>
+                    <p>In kindergarten, children learn basics like letters, sounds, and numbers. They start writing
+                        simple
+                        words and sentences. They explore the world through science, observing plants and animals.
+                        Social
+                        skills are emphasized. Motor skills, both fine and gross, are developed through various
+                        activities
+                        and play.</p>
+                </section>
+                <section class="contact">
+                    <h3>Contact Us</h3>
+                    <p>Phone: +1 123 456 7890</p>
+                    <p>Email: info@xyzschool.com</p>
+                    <p>Address: #123 Main Street, Mirpur 10, Dhaka-1200 </p>
+                </section>
+                <section class="social-media">
+                    <h3>Social Media</h3>
                     <ul>
-                        <li class="link"><a id="Home" href="#Home">Home</a></li>
-                        <li class="link"><a id="About" href="#About">About</a></li>
-                        <li class="link"><a id="Facilities" href="#Facilities">Facilities</a></li>
-                        <li class="link"><a id="Admission" href="#Admission">Admission</a></li>
+                        <li><a href="#"><img class="social-icon" src="./assets/fb.png" alt=""></a></li>
+                        <li><a href="#"><img class="social-icon" src="./assets/twitter.png" alt=""></a></li>
+                        <li><a href="#"><img class="social-icon" src="./assets/google+.png" alt=""></a></li>
+                        <li><a href="#"><img class="social-icon" src="./assets/dribble.png" alt=""></a></li>
                     </ul>
-                </div>
-                <button class="btn">Contact</button>
-                <div class="menu " hidden>
-                    <i class="ti ti-menu-2"></i>
-                </div>
-            </nav>
-        </section>
-        <section id="hero">
-            <div class="hero-title">
-                <h1>
-                <span class="orange">Empowering</span><br>
-                <span class="black">students from small <br> age</span>
-                 <span class="blue"> towards vision</span>
-            </h1>
-            <p class="hero-description">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
-            <div class="advertise">
-                <marquee  behavior="" direction="left"><span>✨ Enroll Today – Ongoing Admissions! ✨</span></marquee>
+                </section>
             </div>
-            <button class="btn">Enroll Now</button>
-            </div>
-            <div class="hero-image">
-                
-            </div>
-        </section>
-    </header>
-<!-- header end  -->
-
-<!-- curriculum section start  -->
-<section id="curriculum">
-    <h1 class="curriculum-title">Standard Curriculum</h1>
-    <div class="standard-of-curriculum">
-        <div class="level-container">
-            <div class="curriculum-level kinder">
-                <img src="./assets/kinder.png" alt="Food milk fruits image">
-                <div class="curriculum-description">
-                    <h2>Kinder (3-6) Years</h2>
-                <p>In kindergarten, children learn basics like letters, sounds, and numbers. They start writing simple words and sentences. They explore the world through science, observing plants and animals. Social skills are emphasized. Motor skills, both fine and gross, are developed through various activities and play.
-                </p>
-                </div>
-                <button >Read More</button>
-            </div>
-            <div class="curriculum-level elementary">
-                <img src="./assets/elementary.png" alt="Book clock and fruits image">
-                <div class="curriculum-description">
-                    <h2>Elementary School</h2>
-                <p>Elementary school students hone foundational skills, such as reading fluently and comprehending texts. They write structured sentences and paragraphs. Math lessons cover addition, subtraction, multiplication, and division. Science experiments introduce earth science and biology.  
-    
-                </p>
-                </div>
-                <button>Read More</button>
-            </div>
-            <div class="curriculum-level middle">
-                <img src="./assets/middle.png" alt="Inventional image ">
-                <div class="curriculum-description">
-                    <h2>Middle (10-16) Years</h2>
-                <p>In middle school, students deepen their understanding of core subjects. They engage in more complex reading and writing, crafting essays and analyzing texts. Math includes algebra and geometry. Science expands to chemistry, physics, and biology. Social studies cover history, government, and cultures. 
-    
-                </p>
-                </div>
-                <button>Read More</button>
-            </div>
-        </div>
-    </div>
-    <div class="naivigation-button">
-        <div><i class="fa-solid fa-chevron-left"></i></div>
-        <div><i class="fa-solid fa-chevron-right"></i></div>
-    </div>
-</section>
-<!-- curriculum section end  -->
-
-<!-- start our stories here -->
- <section id="stories">
-    <h2>Our Stories</h2>
-    <div class="story-container">
-        <div class="first-story">
-
-            <img src="./assets/story-1.png" alt="Story 1">
-            <p class="floating-date">November 19, 2019</p>
+            <hr>
             <div>
-                <h3>A fun toddler coloring training on classroom</h3>
-            <p>Under the streaks of dawn, little Mei clutched her backpack, heart fluttering with excitement. She crossed bustling alleys, cheeks rosy in the crisp morning air, waving to familiar faces. The school gate loomed ahead, a doorway to endless adventures and friendships. With a firm grip on her dreams, she stepped into a world waiting to be discovered. 🌅🎒👧🏻 Would you like to learn more about school life in Qingdao?......</p>
+                <ul class="footer-link">
+                    <li><a href="#home" id="Home">Home</a></li>
+                    <li><a href="#facilities " id="Facilities">Facilities</a></li>
+                    <li><a href="#about" id="About">About</a></li>
+                    <li><a href="#admission" id="Admission">Admission</a></li>
+                </ul>
             </div>
-            <button > Read More.</button>
-        </div>
-        <div class="second-story">
-            <div class="secondary-story">
-                <img src="./assets/story-2.png" alt="">
-                <p class="floating-date">December 10, 2019</p>
-                <div>
-                    <h3>Find out if a school fits the family's needs</h3>
-                <p>Family needs</p>
-                </div>
-            </div>
-            <div class="secondary-story">
-                <img src="./assets/story-3.png" alt="">
-                <p class="floating-date">February 27, 2020</p>
-                <div>
-                    <h3>Summer math & literacy</h3>
-                <p class="story ">Center for Kids</p>
-                </div>
-            </div>
-            <div class="secondary-story">
-                <img src="./assets/story-4.png" alt="">
-                <p class="floating-date">July 12,2020</p>
-                <div>
-                    <h3>Classroom management</h3>
-                    <p>Techniques for new tutors</p>
-                </div>
-            </div>
-            <div class="secondary-story">
-                <img src="./assets/story-5.png" alt="">
-                <p class="floating-date">January 1, 2021</p>
-                <div>
-                    <h3>Conversation rhymes</h3>
-                    <p>Improve kids listening</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <button class="btn">View All</button>
- </section>
-<!-- fotter start  -->
- <footer>
-    <div class="section-1">
-        <section class="school-details">
-            <div class="footer-logo">
-                <img src="./assets/logo.png" alt="Logo">
-                <h2>XYZ School</h2> 
-            </div>
-            <p>In kindergarten, children learn basics like letters, sounds, and numbers. They start writing simple words and sentences. They explore the world through science, observing plants and animals. Social skills are emphasized. Motor skills, both fine and gross, are developed through various activities and play.</p>
-        </section>
-        <section class="contact">
-            <h3>Contact Us</h3>
-            <p>Phone: +1 123 456 7890</p>
-            <p>Email: info@xyzschool.com</p>
-            <p>Address: #123 Main Street, Mirpur 10, Dhaka-1200 </p>
-        </section>
-        <section class="social-media">
-            <h3>Social Media</h3>
-            <ul>
-                <li><a href="#"><img class="social-icon" src="./assets/fb.png" alt=""></a></li>
-                <li><a href="#"><img class="social-icon" src="./assets/twitter.png" alt=""></a></li>
-                <li><a href="#"><img class="social-icon" src="./assets/google+.png" alt=""></a></li>
-                <li><a href="#"><img class="social-icon" src="./assets/dribble.png" alt=""></a></li>
-            </ul>
-        </section>
-    </div>
-    <hr >
-    <div >
-        <ul class="footer-link">
-            <li><a href="#home" id="Home">Home</a></li>
-            <li><a href="#facilities " id="Facilities">Facilities</a></li>
-            <li><a href="#about" id="About">About</a></li>
-            <li><a href="#admission" id="Admission">Admission</a></li>
-        </ul>
-    </div>
-    <p class="copyright">&copy; 2016 XYZ School. All rights reserved.</p>
- </footer>
+            <p class="copyright">&copy; 2016 XYZ School. All rights reserved.</p>
+        </footer>
+
+
+
+    </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
