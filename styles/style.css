@@ -10,7 +10,7 @@
 :root {
     --primary-color: #F7F7F7;
     --secondary-color: #111111;
-    --bule: #01ACFD;
+    --blue: #01ACFD;
     --orange: #FEA301;
     --font-color: #808080;
     --title-size: 3rem;
@@ -88,7 +88,7 @@ nav>.logo>h3 {
 }
 
 #About {
-    color: var(--bule);
+    color: var(--blue);
 }
 
 #Facilities {
@@ -106,7 +106,7 @@ nav>.logo>h3 {
 }
 
 #nav-bar>nav>button:hover {
-    background-color: var(--bule);
+    background-color: var(--blue);
 }
 
 header>#hero {
@@ -168,7 +168,7 @@ header>#hero>.hero-image {
 }
 
 .blue {
-    color: var(--bule);
+    color: var(--blue);
 }
 
 /* header end  */
@@ -306,14 +306,14 @@ header>#hero>.hero-image {
     font-weight: 600;
 }
 
-.naivigation-button {
+.navigation-button {
     display: flex;
     gap: 5px;
     align-items: center;
     justify-content: center;
 }
 
-.naivigation-button>div {
+.navigation-button>div {
     width: 45px;
     display: flex;
     height: 45px;
@@ -799,12 +799,12 @@ hr {
         margin-bottom: 15px;
     }
 
-    .naivigation-button>div {
+    .navigation-button>div {
         width: 40px;
         height: 40px;
         font-size: 1.25rem;
         color: var(--primary-color);
-        background-color: var(--bule);
+        background-color: var(--blue);
     }
 
     /* curriculum section end  */
@@ -1040,12 +1040,12 @@ hr {
         font-size: 1rem;
     }
 
-    .naivigation-button>div {
+    .navigation-button>div {
         width: 30px;
         height: 30px;
         font-size: 0.8rem;
         font-weight: 700;
-        background-color: var(--bule);
+        background-color: var(--blue);
     }
 
     /* curriculum section end  */
@@ -1299,7 +1299,7 @@ hr {
         letter-spacing: 1.5;
     }
 
-    .naivigation-button {
+    .navigation-button {
         display: none;
     }
 
